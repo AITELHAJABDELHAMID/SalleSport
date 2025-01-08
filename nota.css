@@ -1,0 +1,60 @@
+h1{position:absolute; top:100px;left:550px;border-style: outset; color:blue;}
+/*Image*/
+.labelp{ position:absolute; top:150px;left:500px;}
+.ph{ position:absolute; top:148px;left:630px;}
+/*Nom*/
+.labeln{position:absolute; top:190px;left:580px;}
+.in{position:absolute; top:188px;left:630px;}
+/* prenom */
+.labelpr{position:absolute; top:230px;left:550px;}
+.ipr{position:absolute; top:228px;left:630px;}
+/*sexe*/
+.labels{position:absolute; top:270px;left:570px;}
+.is{position:absolute; top:268px;left:630px;}
+/* CIN */
+.labelc{position:absolute; top:310px;left:580px;}
+.ic{position:absolute; top:308px;left:630px;}
+/*Mote de passe */
+.labelmp{position:absolute; top:350px;left:490px;}
+.imp{position:absolute; top:348px;left:630px;}
+/* NMP */
+.labelnmp{position:absolute; top:390px;left:330px;}
+.inmp{position:absolute; top:388px;left:630px;}
+/*AGE*/
+.labelag{position:absolute; top:430px;left:520px;}
+.iag{position:absolute; top:428px;left:630px;}
+/*TELE*/
+.labeltel{position:absolute; top:470px;left:570px;}
+.itel{position:absolute; top:468px;left:630px;}
+/*button*/
+.val{ position:absolute; top:520px; left:550px;width: 300px;height: 30px;}
+/*Objet*/
+.labelob{position:absolute; top:220px;left:580px;}
+.iob{position:absolute; top:250px;left:580px;width: 280px;}
+/*message*/
+.labelms{position:absolute; top:290px;left:580px;}
+.ims{position:absolute; top:320px;left:580px;}
+.val2{ position:absolute; top:420px;left:580px; }
+table{ 
+    width: 450px;   
+    height: 300px; 
+    
+    position:absolute; top:190px;left:450px;
+}
+span{color: red;}
+#er1{position: absolute;top:210px; left: 630px;}
+#er2{position: absolute;top:248px; left: 630px;}
+#er3{
+    position: absolute;
+    top:408px;left:630px;
+}
+#er4{position: absolute;top:450px; left: 630px;}
+
+#img1{
+    position: absolute;
+    top:350px;left:810px;
+}
+#img2{
+    position: absolute;
+    top:390px;left:810px;
+}

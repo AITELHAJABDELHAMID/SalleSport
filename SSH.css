@@ -1,0 +1,277 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+	box-sizing: border-box;
+	list-style: none;
+   
+}
+
+.logo
+{
+ position:absolute;
+ top:10px;left:60px;
+}
+
+.Menu{
+        
+   
+           text-align: center;
+           
+           position: absolute;
+           left: 200px;top:60px;
+           background-color: gray;
+
+}
+.Menu a { background-color:white;
+ 
+}
+.Menu ul{
+           display:inline-flex;
+           list-style: none;
+     
+           
+}
+.Menu ul li {
+                       width: 170px;
+                       margin: 2px;
+                       padding: 3px;
+                   
+                     border-style:outset;
+                     border-color:gray;
+                     background-color: white;
+                   
+                   
+
+}
+.Menu ul li a {
+
+    text-decoration:none;
+color:black;
+}
+
+.ACCUEIL, .Menu ul li:hover {
+    background-color: gray;
+    border-radius: 3px;
+  
+
+}
+.Activite
+{
+    display: none;
+}
+.Menu ul  :hover  .Activite
+{    
+    display: block;
+    position: absolute;
+    background: gray;
+    margin-top: 6px;
+    margin-left: -6px;
+
+}
+.Menu ul li:hover  .Activite ul
+{
+    display: block;
+    margin: 10px;
+}
+.Menu ul li :hover   .Activite ul li 
+{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+
+
+
+.slider{
+    position: absolute;
+    left:200px;
+    top:120px;
+    width: 1000px;
+   
+    overflow: hidden;
+    margin: 10px auto;
+
+}  
+
+.sl{
+          float: left;    
+}
+.s{
+    width: calc(1000px *7);
+    animation: gg 25s infinite ;
+
+}
+@keyframes gg {
+      0% {transform: translateX(0); }
+      05% {transform: translateX(0); }
+      10% {transform: translateX(-1000px); }
+      15% {transform: translateX(-1000px); }
+      20% {transform: translateX(-2000px); }
+      25% {transform: translateX(-2000px); }
+      30% {transform: translateX(-3000px); }
+      35% {transform: translateX(-3000px); }
+      40% {transform: translateX(-4000px); }
+      45% {transform: translateX(-4000px); }
+      50% {transform: translateX(-5000px); }
+      55% {transform: translateX(-5000px); }
+      60% {transform: translateX(-6000px); }
+      70% {transform: translateX(-6000px); }
+  
+
+
+
+      100% {transform: translateX(0); }
+
+
+
+}
+.Container
+{  
+  position:absolute;
+  top:1200px;left:0px;
+    
+width: 100%;
+    background: gray;
+    overflow: auto;
+
+}
+.galerie{
+margin: 10px;
+border: 2px solid white;
+float:left;
+
+}
+.desc a
+{
+    
+    background-color: white;
+    
+}
+ion-icon
+{
+    width: 100px;height: 100px;
+} 
+.facebook
+ {
+  position: absolute;
+  top: 960px;left: 240px;
+ 
+  color: blue;
+
+
+ }
+ .youtube
+ {
+    position: absolute;
+    top: 960px;left: 460px;
+  
+    color: red;
+    
+ }
+ .instagram
+ {
+    position: absolute;
+    top: 960px;left: 680px;
+   
+    color: mediumorchid;
+ }
+ .twitter
+ {
+    position: absolute;
+    top: 960px;left: 900px;
+   
+    color: blue;
+ }
+ .cmnt
+ {
+     position: absolute;
+     TOP:560px;left: 400px;
+     color:black;
+   
+
+
+ }
+ .cmntt
+ {
+    position: absolute;
+    TOP:600px;left:5px;
+    color:black;
+ }
+
+
+ .footer
+ {
+     
+     background-color: black;
+     width: 100%;
+     line-height: 2;
+     position: absolute;
+     top:2700px;left: 0px;
+     padding: 70px 0;
+   
+
+ }
+ .cfooter
+ {
+    max-width: 100%;
+
+margin: auto;
+
+ }
+ 
+ .lignefooter
+ {
+     display: flex;
+     flex-wrap: wrap;
+   
+
+ }
+
+ .colonnfooter
+ {
+     width:300px;
+    
+   padding: 0  15px;
+  
+ }
+ .footer h4
+ {
+     font-size: 18px;
+     color:red;
+     text-transform: capitalize;
+     margin-bottom: 30px;
+     font-weight: 500;
+ }
+ .footer .cfooter .lignefooter .colonnfooter ul
+ {
+     list-style: none;
+ }
+ 
+ .colonnfooter p
+  {
+      color: white;
+  }
+  .colonnfooter ul li a 
+  {
+      color: white;
+  }
+  .RS ul a i { 
+       width: 50px;height: 50px;  
+       color:white;
+ }
+  .maps
+  {
+      position: absolute;
+      top:2030px;
+      width: 100%;height: 600px;
+  }
+ 
+
+ .ballon{width: 100%;}
+
