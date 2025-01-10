@@ -31,7 +31,7 @@ window.onload = function() {
    menumobile();
 }
 
-
+/*
 function val()
 {  
    var  n=document.getElementById('NOM').value;
@@ -118,4 +118,4 @@ function Affichage2()
 
     }
    
-}
+}*/

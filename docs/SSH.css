@@ -27,8 +27,7 @@ body, html {
 .menu-pc-tablette {
     max-width: 100%;
     display: flex;
-    position: absolute;
-    left:300px;
+    position: relative; 
     z-index: 2;
     
 }
@@ -219,12 +218,12 @@ body, html {
 }
 
 .sl img {
-    width:1000px;
-    height: 400px;
-  margin-left: 240px;
-  margin-top: 20px;
+    width: 100%; /* Utilisez 100% pour occuper toute la largeur */
+    height: auto; /* Ajuste la hauteur automatiquement */
     display: block; /* Évite les espaces blancs sous les images */
     border: 8px solid red; /* Bordure autour des images */
+    /*margin-left: 240px;
+    margin-top: 20px;*/
 }
 
 /* Animation pour le slider */
@@ -246,10 +245,12 @@ body, html {
     }
 
     .sl img {
-        margin-left: auto;
-        border-radius: 8px; /* Coins arrondis */
+        /*margin-left: auto;*/
+       /* border-radius: 8px; /* Coins arrondis *
         height:200px;
-        max-width:100%;
+        max-width:100%;*/
+        height: auto;
+        max-width: 100%;
     }
 }
 /*style pour commentaire */
@@ -287,6 +288,7 @@ margin-left: 20px;
 width: 300px;
 height: 200px;
 
+
 }
 @media(max-width:768px)
 {
@@ -298,28 +300,31 @@ height: 200px;
     .galerie img{
         border: 1px solid black;   
     margin-top: 10px;
-width: 60px;
-height: 60px;
+         width: 60px;
+         height: 80px;
+        
     }
 
 }
 /*maps*/
 .maps{
-    position: relative;
+    /*position: relative;
     margin-left: 200px;
     width: 1000px;
     height: 400px;
-    margin-top: 20px;
+    margin-top: 20px;*/
+    width: 100%;
+    height: 400px;
    
 }
 @media(max-width:768px)
 {
     .maps{
-        
-        margin-left: 20px;
+        /*margin-left: 20px;
        max-width: 90%;
        height: 300px;
-        margin-top: 10px;
+        margin-top: 10px;*/
+        height: 300px; /* Ajustez la hauteur de la carte */
     }
 }
 /*footer*/
@@ -404,6 +409,7 @@ height: 60px;
     .lignefooter {
         flex-direction: column; /* Les colonnes deviennent des blocs empilés */
         align-items: center; /* Centrer les colonnes */
+        
     }
     
     .colonnfooter {
