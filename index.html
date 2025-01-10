@@ -4,91 +4,147 @@
 <head>
     <title>SALLE DE SPORT</title>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="SSH.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="Validation.js"></script>
 </head>
 <body>
-   
-    <div class="slider">
-        <div class="s">
-         <div class="sl"><img  width="1000px" height="400px" src="Images/BODYFORM.jpg" alt="Fitness"/></div>
-         <div class="sl"><img width="1000px" height="400px" src="Images/frpk.JPG" alt="frp"></div>                                                            
-         <div class="sl"><img width="1000px" height="400px" src="Images/BODYFORM2.jpg" alt="Fitnesss"/></div>
-        <div class="sl"><img   width="1000px" height="400px" src="Images/piscineOLAMPICE.jpg"  alt="Pessin"/></div>
-         <div class="sl" ><img width="1000px" height="400px"  src="Images/FE.jpg" alt="stade"/></div>
-         <div class="sl" ><img  width="1000px" height="400px" src="Images/SP.jpg" alt="sp"/></div>
-         <div class="sl" ><img  width="1000px" height="400px"  src="Images/fitnessport.jpg" alt="fs"/></div>
-        </div>
-    </div><br><br>
-
+   <!-- En-tête -->
+<header class="header">
+    <!-- Logo -->
     <div class="logo">
-        <img src="Images/LOGOO.png" width="130px" height="120px" alt="salle">
+        <img src="Images/LOGOO.png" width="130" height="120" alt="salle">
     </div>
-   <div class="Menu">
-       
+
+    <!-- Menu pour PC/Tablette -->
+    <nav class="menu menu-pc-tablette">
         <ul>
-         
-            <li class="ACCUEIL">
-<a href="file:///C:/Users/AITEL/Desktop/ISTA/PROJET%20Fin%20Formation%20%20%20%20AIT%20EL%20HAJ%20%20%20%20Abdelhamid%20TDI201/SS.html">ACCUEIL</a></li> 
-            <li><a href="#">ACTIVITES</a>
-                   <div class="Activite">
-               
-                          <ul>
-                              <li><a href="football.html">FOOTBALL</a></li>
-                              <li><a href="Natation.html">NATATION</a></li>
-                              <li><a href="pFitness.html">FITNESS</a></li>
-    
-                          </ul>
-                   </div>
+            <li class="ACCUEIL"><a href="index.html">ACCUEIL</a></li>
+            <li>
+                <a href="#">ACTIVITÉS</a>
+                <div class="activite">
+                    <ul>
+                        <li><a href="football.html">FOOTBALL</a></li>
+                        <li><a href="Natation.html">NATATION</a></li>
+                        <li><a href="pFitness.html">FITNESS</a></li>
+                    </ul>
+                </div>
             </li>
-          <li><a href="p5.html">ABONNEMENTS</a></li>
+            <li><a href="p5.html">ABONNEMENTS</a></li>
             <li><a href="p4.html">CONTACT</a></li>
-            <li><a href="p3.html"> Connecter-Vous</a></li>
-            <li><a href="p2.html"> Inscrit-Vous</a></li>
-            
+            <li><a href="p3.html">CONNECTER-VOUS</a></li>
+            <li><a href="p2.html">INSCRIT-VOUS</a></li>
         </ul>
-   </div>
+    </nav>
+
+    <!-- Menu pour Mobile -->
+    <nav class="menu menu-mobile">
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+        <ul>
+            <li class="ACCUEIL"><a href="index.html">ACCUEIL</a></li>
+            <li class="activite-item">
+                <a href="#" class="activite-toggle">ACTIVITÉS</a>
+                <div class="activite">
+                    <ul>
+                        <li><a href="football.html">FOOTBALL</a></li>
+                        <li><a href="Natation.html">NATATION</a></li>
+                        <li><a href="pFitness.html">FITNESS</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="p5.html">ABONNEMENTS</a></li>
+            <li><a href="p4.html">CONTACT</a></li>
+            <li><a href="p3.html">CONNECTER-VOUS</a></li>
+            <li><a href="p2.html">INSCRIT-VOUS</a></li>
+        </ul>
+    </nav>
+</header>
 
     
+<!--slider-->
 
-    
-        
+<div class="slider">
+    <div class="s">
+        <div class="sl"><img src="Images/BODYFORM.jpg" alt="Fitness" ></div>
+       <!---- <div class="sl"><img src="Images/frpk.JPG" alt="FRP" ></div>
+        <div class="sl"><img src="Images/BODYFORM2.jpg" alt="Fitness" ></div>
+        <div class="sl"><img src="Images/piscineOLAMPICE.jpg" alt="Piscine" ></div>
+        <div class="sl"><img src="Images/FE.jpg" alt="Stade" ></div>
+        <div class="sl"><img src="Images/SP.jpg" alt="SP" ></div>
+        <div class="sl"><img src="Images/fitnessport.jpg" alt="FitnessPort" ></div>-->
+    </div>
+</div>
+<!--cmmentaire-->
+<div class="cm">
+<div class="cmnt">
+    <p> <b>YOUR FITNESS  IS ESSENTIAL<b></p>
+</div>
+        <div     class="cmntt" >
+<p> Plusieurs activités sont indispensables pour améliorer votre forme : <br>
+        ✔️ <b>FOOTBALL<br>
+        Permet d'Améliore le tonus musculaire et renforcer les os <br>
+        permet d’améliorer le cardio vasculaire, 
+        l'endurance et la respiration
+        permet de développer la vitesse, la coordination et l’adresse
+        apporte tonus musculaire et résistance osseuse<br>
+         permet d'éveiller la personnalité et de forger l’esprit d’équipe <br>
+        ✔️  FITNESS <br>
+Améliore la souplesse de la corps et réduit le risque de déchirures musculaires et de douleur du dos.<bR>
+Booste le métabolisme, c’est-à-dire que votre corps continue de brûler de la graisse même au repos.
+Renforce les muscles, les tendons et les ligaments, ce qui réduit les risques de blessure.<br>
+        ✔️  NATATION <br>
+Complète, la natation est idéale pour la perte de poids. 
+La résistance de l’eau permet de brûler plus de calories et l’effet drainant de l’eau permet de lisser la peau.
+Les mouvements amples de la natation permettent de se muscler en allongeant le muscle plutôt que par une prise de masse
+De meilleures capacités cardiovasculaires et respiratoires
+Des bénéfices pour la santé mentale<b>
+
+    </p>
+</div>
+</div>
+
+ 
+<!--galerie-->
 <div class=Container>
 <div class="galerie"> 
-            <img  width="300px" height="300px"  src="Images/IMAGE FITNESS.jpg" alt="Fitness">
+            <img   src="Images/IMAGE FITNESS.jpg" alt="Fitness">
            
 </div>
 <div class="galerie"> 
-    <img width="300px" height="300px"  src="Images/Natation2.jpg" alt="natation">
+    <img   src="Images/Natation2.jpg" alt="natation">
     
 </div>
 <div class="galerie"> 
-                    <img width="300px" height="300px" src="Images/fitness2.jpg" alt="Fitness">
+                    <img  src="Images/fitness2.jpg" alt="Fitness">
         
 </div>
 <div class="galerie"> 
-            <img width="300px" height="300px"  src="Images/BODYFORM3.jpg" alt="Foot">
+            <img  src="Images/BODYFORM3.jpg" alt="Foot">
             
 </div>
 <div class="galerie"> 
-       <img width="300px" height="300px"  src="Images/foot2.jpg" alt="Foot">
+       <img src="Images/foot2.jpg" alt="Foot">
        
 </div>
     <div class="galerie"> 
-            <img width="300px" height="300px"  src="Images/NATATIONN.jpg" alt="natation">
+            <img  src="Images/NATATIONN.jpg" alt="natation">
           
     </div>
     <div class="galerie"> 
-            <img width="300px" height="300px"  src="Images/f23.JPG" alt="f23">
+            <img  src="Images/f23.JPG" alt="f23">
            
     </div>
     <div class="galerie"> 
-        <img width="300px" height="300px"  src="Images/f24.JPG" alt="f24">
+        <img  src="Images/f24.JPG" alt="f24">
      
 </div>
 </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<!--icone--
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    
     <a   class="facebook"    href="https//facebook.com">
@@ -104,102 +160,56 @@
     <a class="twitter" href="htpps://twitter.com">
 
         <ion-icon name="logo-twitter"></ion-icon>
-    </a>
-    <div class="cmnt">
-        <p> <b>YOUR FITNESS  IS ESSENTIAL<b></p>
-    </div>
-            <div     class="cmntt" >
-<p> Plusieurs activités sont indispensables pour améliorer votre forme : <br>
-            ✔️ <b>FOOTBALL<br>
-            Permet d'Améliore le tonus musculaire et renforcer les os <br>
-            permet d’améliorer le cardio vasculaire, 
-            l'endurance et la respiration
-            permet de développer la vitesse, la coordination et l’adresse
-            apporte tonus musculaire et résistance osseuse<br>
-             permet d'éveiller la personnalité et de forger l’esprit d’équipe <br>
-            ✔️  FITNESS <br>
-Améliore la souplesse de la corps et réduit le risque de déchirures musculaires et de douleur du dos.<bR>
-Booste le métabolisme, c’est-à-dire que votre corps continue de brûler de la graisse même au repos.
-Renforce les muscles, les tendons et les ligaments, ce qui réduit les risques de blessure.<br>
-            ✔️  NATATION <br>
-Complète, la natation est idéale pour la perte de poids. 
-La résistance de l’eau permet de brûler plus de calories et l’effet drainant de l’eau permet de lisser la peau.
-Les mouvements amples de la natation permettent de se muscler en allongeant le muscle plutôt que par une prise de masse
-De meilleures capacités cardiovasculaires et respiratoires
-Des bénéfices pour la santé mentale<b>
-
-        </p>
-    </div>
-
-   
+    </a>-->
+   <!--google maps-->
 <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.626238205722!2d-6.882248685302782!
 3d33.976445029169156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76db1b51ffc1b%3A0x8eb40baa8907af6
 !2sISTA%20YAACOUB%20ELMANSOUR!5e0!3m2!1sfr!2sma!4v1648945876395!5m2!1sfr!2sma" 
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
-    
+    <!--footer-->
+ 
     <footer class="footer">
-       <div class="cfooter">
-           <div class="lignefooter">
-                  <!-----C1----->
-                     <div class="colonnfooter">
- 
-                           <h4>ACTIVITES</h4>
-
-                           
-                           <ul>
-                               <li><a href="#">FOOTBALLL</a></li>
-                               <li><a href="#">FITNESSS</a></li>
-                               <li><a href="#">NATATIONN</a></li>
-                               
-                           </ul>
-                     </div>
-                     <!-----C2----->
-                     <div class="colonnfooter">
-
-                        <h4>CLUBS</h4>
-                        <ul>
-                            <li><a href="#">RABAT</a></li>
-                            <li><a href="#">CASABLANCA</a></li>
-                            <li><a href="#">TANGER</a></li>
-                        </ul>
-                  </div>
-                  <!-----C3----->
-                 <div class="colonnfooter">
-
-                    <h4>RESEAU SOCIAUX</h4>
-                    <p> Retrouvez tout l'actualite <br>
-                         sur Salle AIT EL HAJ<p>
-                    <p> Suivez nous sur les Resaux sociaux </p>
-
-                    <div class="RS">
-                <ul>
-
- 
-<a href="#">  <i class="fab fa-facebook-f"  ></i> </a>
-<a href="#">  <i class="fab fa-twitter"></i> </a>
-<a href="#">  <i class="fab fa-instagram"></i> </a>
-<a href="#">  <i class="fab fa-linkedin-in"></i> </a>
-                </ul>
-                    </div>
-
-            </div>
-            <!----------C4----------->
+        <div class="lignefooter">
             <div class="colonnfooter">
-
-                <h4>Contacte_Nous</h4>
-
-                
-               <p>ADRESSE:CYM</p>
-               <p>TELE : 0666666666</p>
-               <p>fax : 0699999999</p>
-               <P>E-Mail :<br> AITELHAJ-TDI201@gmail.com</P>
-      </div>
-                     </div>
-
-</div>
-
+                <h4>ACTIVITES</h4>
+                <ul>
+                    <li><a href="#">FOOTBALL</a></li>
+                    <li><a href="#">FITNESS</a></li>
+                    <li><a href="#">NATATION</a></li>
+                </ul>
+            </div>
+            <div class="colonnfooter">
+                <h4>CLUBS</h4>
+                <ul>
+                    <li><a href="#">RABAT</a></li>
+                    <li><a href="#">CASABLANCA</a></li>
+                    <li><a href="#">TANGER</a></li>
+                </ul>
+            </div>
+            <div class="colonnfooter">
+                <h4>RESEAU SOCIAUX</h4>
+                <p>Retrouvez tout l'actualité sur Salle AIT EL HAJ</p>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="colonnfooter">
+                <h4>CONTACTEZ-NOUS</h4>
+                <p>ADRESSE : CYM</p>
+                <p>TÉL : 0666666666</p>
+                <p>FAX : 0699999999</p>
+                <p>Email : @@@@@</p>
+            </div>
+        </div>
     </footer>
+    <div class="copyright">
+        <p>© Copyright 2025 Tous les droits réservés | SalleSport</p>
+    </div>
+
    
 </body>
 </html>
