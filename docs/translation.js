@@ -126,8 +126,8 @@ cr:"© Copyright 2025 Tous les droits réservés | SalleSport",
 // Vérifier si l'élément existe avant d'appliquer les styles
          if (menuToggleButton) {
     // Appliquer les styles via JavaScript
-          menuToggleButton.style.right='340px';
-          menu_ul.style.right='270px';
+          menuToggleButton.style.right='300px';
+          menu_ul.style.right='230px';
         }
       
    
