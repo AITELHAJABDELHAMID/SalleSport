@@ -426,6 +426,28 @@ height: 200px;
 .copyright p {
     margin: 0;
 }
+/* Style par défaut pour les écrans de bureau (PC) */
+.language-select {
+    font-size: 1em;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    
+}
+
+/* Styles pour les appareils mobiles */
+@media (max-width: 768px) {
+    .language-select {
+        position: static;   /* Supprime le positionnement absolu pour qu'il s'intègre dans le flux */
+        display: block;
+        background-color: white;
+        width: 30%;
+        margin-top: 25px;
+    }
+}
+
 
 
 
