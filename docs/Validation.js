@@ -1,35 +1,15 @@
 //function appelle menu mobile
 
 // Fonction pour gérer l'affichage du menu mobile
-function menumobile() {
-   // Sélectionne le bouton du menu mobile
-   const menuToggle = document.querySelector('.menu-toggle');
-   const menu = document.querySelector('.menu-mobile');
+/*function menumobile() {
+    
    
-   // Ajoute l'événement au bouton pour ouvrir/fermer le menu
-   menuToggle.addEventListener('click', function() {
-       menu.classList.toggle('open');
-   });
-
-   // Sélectionner tous les éléments "ACTIVITÉS" dans le menu mobile
-   document.querySelectorAll('.activite-toggle').forEach(function(toggle) {
-       toggle.addEventListener('click', function(event) {
-           // Empêche le lien de naviguer
-           event.preventDefault();
-
-           // Trouver le sous-menu associé
-           const activiteSubMenu = this.nextElementSibling; // Le div .activite
-
-           // Basculer la classe 'open' sur le sous-menu pour l'afficher/masquer
-           activiteSubMenu.classList.toggle('open');
-       });
-   });
 }
 
 // Appel à la fonction au chargement de la page
 window.onload = function() {
    menumobile();
-}
+}*/
 
 /*
 function val()

@@ -10,33 +10,40 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="Validation.js"></script>
+<script src="translation.js"></script>
 </head>
 <body>
    <!-- En-tête -->
+    
 <header class="header">
-    <!-- Logo -->
+ <!-- Logo -->
     <div class="logo">
         <img src="Images/LOGOO.png" width="130" height="120" alt="salle">
     </div>
+     <!-- Sélecteur de langue -->
+     <select id="language-select" class="language-select">
+        <option value="Francais">Français</option>
+        <option value="Arabe">العربية</option>
+    </select>
 
     <!-- Menu pour PC/Tablette -->
-    <nav class="menu menu-pc-tablette">
+    <nav  class="menu menu-pc-tablette">
         <ul>
-            <li class="ACCUEIL"><a href="index.html">ACCUEIL</a></li>
-            <li>
-                <a href="#">ACTIVITÉS</a>
+            <li class="ACCUEIL"><a href="index.html"  data-key="ACCUEIL">ACCUEIL</a></li>
+            <li >
+                <a href="#" data-key="ACTIVITÉS">ACTIVITÉS</a>
                 <div class="activite">
                     <ul>
-                        <li><a href="#">FOOTBALL</a></li>
-                        <li><a href="#">NATATION</a></li>
-                        <li><a href="#">FITNESS</a></li>
+                        <li><a href="#" data-key="FOOTBALL">FOOTBALL</a></li>
+                        <li><a href="#" data-key="NATATION">NATATION</a></li>
+                        <li><a href="#" data-key="FITNESS" >FITNESS</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#">ABONNEMENTS</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">CONNECTER-VOUS</a></li>
-            <li><a href="#">INSCRIT-VOUS</a></li>
+            <li><a href="#" data-key="ABONNEMENTS">ABONNEMENTS</a></li>
+            <li><a href="#" data-key="CONTACT" >CONTACT</a></li>
+            <li><a href="#" data-key="CONNECTER">CONNECTER-VOUS</a></li>
+            <li><a href="#" data-key="INSCRIT">INSCRIT-VOUS</a></li>
         </ul>
     </nav>
 
@@ -44,21 +51,21 @@
     <nav class="menu menu-mobile">
         <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
         <ul>
-            <li class="ACCUEIL"><a href="index.html">ACCUEIL</a></li>
+            <li class="ACCUEIL"><a href="index.html" data-key="ACCUEIL">ACCUEIL</a></li>
             <li class="activite-item">
-                <a href="#" class="activite-toggle">ACTIVITÉS</a>
+                <a href="#" class="activite-toggle" data-key="ACTIVITÉS">ACTIVITÉS</a>
                 <div class="activite">
                     <ul>
-                        <li><a href="#">FOOTBALL</a></li>
-                        <li><a href="#">NATATION</a></li>
-                        <li><a href="#">FITNESS</a></li>
+                        <li><a href="#" data-key="FOOTBALL">FOOTBALL</a></li>
+                        <li><a href="#" data-key="NATATION">NATATION</a></li>
+                        <li><a href="#" data-key="FITNESS">FITNESS</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#">ABONNEMENTS</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">CONNECTER-VOUS</a></li>
-            <li><a href="#">INSCRIT-VOUS</a></li>
+            <li><a href="#" data-key="ABONNEMENTS">ABONNEMENTS</a></li>
+            <li><a href="#" data-key="CONTACT">CONTACT</a></li>
+            <li><a href="#" data-key="CONNECTER">CONNECTER-VOUS</a></li>
+            <li><a href="#" data-key="INSCRIT">INSCRIT-VOUS</a></li>
         </ul>
     </nav>
 </header>
@@ -80,10 +87,10 @@
 <!--cmmentaire-->
 <div class="cm">
 <div class="cmnt">
-    <p> <b>YOUR FITNESS  IS ESSENTIAL<b></p>
+    <p><b data-key="ccc"> VOTRE FORME PHYSIQUE EST ESSENTIELLE</b></p>
 </div>
-        <div     class="cmntt" >
-<p> Plusieurs activités sont indispensables pour améliorer votre forme : <br>
+        <div     class="cmntt"   >
+<p data-key="C1"> Plusieurs activités sont indispensables pour améliorer votre forme : <br>
         ✔️ <b>FOOTBALL<br>
         Permet d'Améliore le tonus musculaire et renforcer les os <br>
         permet d’améliorer le cardio vasculaire, 
@@ -172,24 +179,24 @@ Des bénéfices pour la santé mentale<b>
     <footer class="footer">
         <div class="lignefooter">
             <div class="colonnfooter">
-                <h4>ACTIVITES</h4>
+                <h4 data-key="ACTIVITÉS">ACTIVITES</h4>
                 <ul>
-                    <li><a href="#">FOOTBALL</a></li>
-                    <li><a href="#">FITNESS</a></li>
-                    <li><a href="#">NATATION</a></li>
+                    <li><a href="#" data-key="FOOTBALL">FOOTBALL</a></li>
+                    <li><a href="#"data-key="FITNESS" >FITNESS</a></li>
+                    <li><a href="#"data-key="NATATION" >NATATION</a></li>
                 </ul>
             </div>
             <div class="colonnfooter">
-                <h4>CLUBS</h4>
+                <h4 data-key="CLUBS">CLUBS</h4>
                 <ul>
-                    <li><a href="#">RABAT</a></li>
-                    <li><a href="#">CASABLANCA</a></li>
-                    <li><a href="#">TANGER</a></li>
+                    <li><a href="#" data-key="RABAT">RABAT</a></li>
+                    <li><a href="#" data-key="CASABLANCA">CASABLANCA</a></li>
+                    <li><a href="#" data-key="TANGER">TANGER</a></li>
                 </ul>
             </div>
             <div class="colonnfooter">
-                <h4>RESEAU SOCIAUX</h4>
-                <p>Retrouvez tout l'actualité sur Salle AIT EL HAJ</p>
+                <h4 data-key="RS">RESEAU SOCIAUX</h4>
+                <p data-key="msg">Retrouvez tout l'actualité sur Salle AIT EL HAJ</p>
                 <div>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -198,16 +205,16 @@ Des bénéfices pour la santé mentale<b>
                 </div>
             </div>
             <div class="colonnfooter">
-                <h4>CONTACTEZ-NOUS</h4>
-                <p>ADRESSE : CYM</p>
-                <p>TÉL : 0666666666</p>
-                <p>FAX : 0699999999</p>
-                <p>Email : @@@@@</p>
+                <h4 data-key="CONNECTER">CONTACTEZ-NOUS</h4>
+                <p data-key="ad">ADRESSE : CYM</p>
+                <p data-key="tele">TÉL : 0666666666</p>
+                <p data-key="fax">FAX : 0699999999</p>
+                <p data-key="mail">Email : sallesport@AH.com</p>
             </div>
         </div>
     </footer>
     <div class="copyright">
-        <p>© Copyright 2025 Tous les droits réservés | SalleSport</p>
+        <p data-key="cr">© Copyright 2025 Tous les droits réservés | SalleSport</p>
     </div>
 
    
